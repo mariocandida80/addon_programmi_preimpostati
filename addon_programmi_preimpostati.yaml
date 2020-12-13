@@ -1,0 +1,85 @@
+homeassistant:
+  customize:
+    package.node_anchors:
+      customize: &customize
+        Package: 'Addon programmi preimpostati'
+        Versione: '1.0'
+        Autore: 'MARIO @tlod80'
+   
+
+
+script:
+  programma_1_term:
+    alias: programma1
+    sequence:
+    - data_template:
+        option: PRERISCALDAMENTO
+      service: input_select.select_option
+      entity_id: input_select.modalita_termostato
+    - data_template:
+        entity_id: input_datetime.orario_accensione_term
+        time: 04:15:00
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_datetime.orario_spegnimento_term
+        time: 05:30:00
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_datetime.orario_accensione_term2
+        time: 13:00:00
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_datetime.orario_spegnimento_term2
+        time: 15:00:00
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_datetime.orario_accensione_term3
+        time: 18:30:00
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_datetime.orario_spegnimento_term3
+        time: 23:30:00
+      service: input_datetime.set_datetime      
+    - data_template:
+        entity_id: input_number.temperatura_termostato
+        value: 22
+      service: input_number.set_value
+
+  programma_2_term:
+    alias: programma2
+    sequence:
+    - data_template:
+        option: AUTO
+      service: input_select.select_option
+      entity_id: input_select.modalita_termostato
+    - data_template:
+        entity_id: input_datetime.orario_accensione_term
+        time: 19:30:00
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_datetime.orario_spegnimento_term
+        time: 23:59:00
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_number.temperatura_termostato
+        value: 22
+      service: input_number.set_value
+  programma_3_term:
+    alias: programma3
+    sequence:
+    - data_template:
+        option: PRERISCALDAMENTO
+      service: input_select.select_option
+      entity_id: input_select.modalita_termostato
+    - data_template:
+        entity_id: input_datetime.orario_accensione_term
+        time: 21:30:00
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_datetime.orario_spegnimento_term
+        time: 23:59:00
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_number.temperatura_termostato
+        value: 22
+      service: input_number.set_value
