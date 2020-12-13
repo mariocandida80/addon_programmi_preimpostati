@@ -4,15 +4,17 @@
 Se vi piace il mio lavoro, potete supportarmi su <a href="https://www.paypal.com/paypalme/mariocandida">Paypal</a> oppure <a href="https://www.buymeacoffee.com/mariocandida80">offrimi un caffè</a>.<br>
 <p align="center"/> <b>Addon programmi preimpostati per cronotermostato</b> <br> </p>
 
-Questo package crea 3 pulsanti con i quali si possono impostare automaticamente orari, modalità di accensione e temperatura.<a href="https://github.com/mariocandida80/cronotermostato/blob/master/README.md"> cronotermostato</a> tramite telegram. <br>
+Questo package crea 3 pulsanti con i quali si possono impostare automaticamente orari, modalità di accensione e temperatura del <a href="https://github.com/mariocandida80/cronotermostato/blob/master/README.md">package cronotermostato.</a><br>
 <p align="center"/><img src="https://github.com/mariocandida80/addon_telegram/blob/master/foto/pannello1.jpg" width="390"></p>
 
 Prerequisiti:<br>
-Aver configurato il <a href="https://github.com/mariocandida80/addon_telegram/wiki">bot telegram</a><br>
+Aver configurato il <a href="https://github.com/mariocandida80/cronotermostato/blob/master/README.md">package cronotermostato.</a><br>
 
-Per installarlo basterà copiare il file addon_telegram.yaml nella cartella package e riavviare home assistant.<br>
-Per chi ha il package no-climate, basterà aprire il file addon_telegram con un editor e sostituire tutti i climate.riscaldamento con il prorio.<br>
+Per installarlo basterà copiare il file addon_programmi_preimpostati.yaml nella cartella package e riavviare home assistant. Vi consiglio di configurarlo prima di riavviare così potrete riavviare 1 sola volta.<br>
+Una volta riavviato bisognerà copiare in lovelace la parte raw oppure yaml in base alla propria configurazione<br>
 
+<p align="center"/> <b>Configurazione</b> <br> </p>
+Aprite il file package ed editate gli orari, le modalità e 
 <p align="center"/> <b>Funzionamento</b> <br> </p>
 Per avviare il pannello vi basterà aprire il vostro bot telegram e digitare /termostato.<br>
 Vi apparirà il pannello di controllo principale con i seguenti bottoni:<br>
