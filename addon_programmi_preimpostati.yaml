@@ -18,27 +18,33 @@ script:
       entity_id: input_select.modalita_termostato
     - data_template:
         entity_id: input_datetime.orario_accensione_term
-        time: 04:15:00
+        time: '04:15'
       service: input_datetime.set_datetime
     - data_template:
         entity_id: input_datetime.orario_spegnimento_term
-        time: 05:30:00
+        time: '05:30'
       service: input_datetime.set_datetime
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.accensione2
     - data_template:
         entity_id: input_datetime.orario_accensione_term2
-        time: 13:00:00
+        time: '13:00'
       service: input_datetime.set_datetime
     - data_template:
         entity_id: input_datetime.orario_spegnimento_term2
-        time: 15:00:00
+        time: '15:00'
       service: input_datetime.set_datetime
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.accensione3     
     - data_template:
         entity_id: input_datetime.orario_accensione_term3
-        time: 18:30:00
+        time: '18:30'
       service: input_datetime.set_datetime
     - data_template:
         entity_id: input_datetime.orario_spegnimento_term3
-        time: 23:30:00
+        time: '23:30'
       service: input_datetime.set_datetime      
     - data_template:
         entity_id: input_number.temperatura_termostato
@@ -54,16 +60,39 @@ script:
       entity_id: input_select.modalita_termostato
     - data_template:
         entity_id: input_datetime.orario_accensione_term
-        time: 19:30:00
+        time: '04:15'
       service: input_datetime.set_datetime
     - data_template:
         entity_id: input_datetime.orario_spegnimento_term
-        time: 23:59:00
+        time: '05:30'
       service: input_datetime.set_datetime
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.accensione2
+    - data_template:
+        entity_id: input_datetime.orario_accensione_term2
+        time: '13:00'
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_datetime.orario_spegnimento_term2
+        time: '15:00'
+      service: input_datetime.set_datetime
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.accensione3     
+    - data_template:
+        entity_id: input_datetime.orario_accensione_term3
+        time: '18:30'
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_datetime.orario_spegnimento_term3
+        time: '23:30'
+      service: input_datetime.set_datetime      
     - data_template:
         entity_id: input_number.temperatura_termostato
         value: 22
       service: input_number.set_value
+      
   programma_3_term:
     alias: programma3
     sequence:
@@ -73,12 +102,34 @@ script:
       entity_id: input_select.modalita_termostato
     - data_template:
         entity_id: input_datetime.orario_accensione_term
-        time: 21:30:00
+        time: '04:15'
       service: input_datetime.set_datetime
     - data_template:
         entity_id: input_datetime.orario_spegnimento_term
-        time: 23:59:00
+        time: '05:30'
       service: input_datetime.set_datetime
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.accensione2
+    - data_template:
+        entity_id: input_datetime.orario_accensione_term2
+        time: '13:00'
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_datetime.orario_spegnimento_term2
+        time: '15:00'
+      service: input_datetime.set_datetime
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.accensione3     
+    - data_template:
+        entity_id: input_datetime.orario_accensione_term3
+        time: '18:30'
+      service: input_datetime.set_datetime
+    - data_template:
+        entity_id: input_datetime.orario_spegnimento_term3
+        time: '23:30'
+      service: input_datetime.set_datetime      
     - data_template:
         entity_id: input_number.temperatura_termostato
         value: 22
