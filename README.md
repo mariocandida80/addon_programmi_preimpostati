@@ -2,9 +2,9 @@
 <br>
 
 Se vi piace il mio lavoro, potete supportarmi su <a href="https://www.paypal.com/paypalme/mariocandida">Paypal</a> oppure <a href="https://www.buymeacoffee.com/mariocandida80">offrimi un caffè</a>.<br>
-<p align="center"/> <b>Addon Telegram per cronotermostato</b> <br> </p>
+<p align="center"/> <b>Addon programmi preimpostati per cronotermostato</b> <br> </p>
 
-Questo package ha una serie di automazioni che permettono di comandare il totalmente<a href="https://github.com/mariocandida80/cronotermostato/blob/master/README.md"> cronotermostato</a> tramite telegram. <br>
+Questo package crea 3 pulsanti con i quali si possono impostare automaticamente orari, modalità di accensione e temperatura.<a href="https://github.com/mariocandida80/cronotermostato/blob/master/README.md"> cronotermostato</a> tramite telegram. <br>
 <p align="center"/><img src="https://github.com/mariocandida80/addon_telegram/blob/master/foto/pannello1.jpg" width="390"></p>
 
 Prerequisiti:<br>
