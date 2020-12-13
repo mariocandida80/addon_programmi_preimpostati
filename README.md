@@ -5,7 +5,7 @@ Se vi piace il mio lavoro, potete supportarmi su <a href="https://www.paypal.com
 <p align="center"/> <b>Addon programmi preimpostati per cronotermostato</b> <br> </p>
 
 Questo package crea 3 pulsanti con i quali si possono impostare automaticamente orari, modalità di accensione e temperatura del <a href="https://github.com/mariocandida80/cronotermostato/blob/master/README.md">package cronotermostato.</a><br>
-<p align="center"/><img src="https://github.com/mariocandida80/addon_telegram/blob/master/foto/pannello1.jpg" width="390"></p>
+<p align="center"/><img src="https://github.com/mariocandida80/addon_programmi_preimpostati/blob/main/foto1.jpg" width="390"></p>
 
 Prerequisiti:<br>
 Aver configurato il <a href="https://github.com/mariocandida80/cronotermostato/blob/master/README.md">package cronotermostato.</a><br>
