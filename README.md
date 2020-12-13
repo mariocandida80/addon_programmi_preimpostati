@@ -14,7 +14,7 @@ Per installarlo basterà copiare il file addon_programmi_preimpostati.yaml nella
 Una volta riavviato bisognerà copiare in lovelace la parte raw oppure yaml in base alla propria configurazione.<br>
 
 <p align="center"/> <b>Configurazione</b> <br> </p>
-Aprite il file package ed editate gli orari, le modalità e le abilitazioni delle fasce orarie in base alle vostre esigenze. Una volta editato, andate in impostazioni, ggestione del server e ricaricate gli script. Non c'è bisogno di riavviare.<br>
+Aprite il file package ed editate gli orari, le modalità e le abilitazioni delle fasce orarie in base alle vostre esigenze. Una volta editato, andate in impostazioni, gestione del server e ricaricate gli script. Non c'è bisogno di riavviare.<br>
 
 <p align="center"/> <b>Funzionamento</b> <br> </p>
 Vi basterà cliccare su uno dei 3 programmi per abilitare la configurazione da voi impostata.<br>
