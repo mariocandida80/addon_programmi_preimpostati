@@ -1,0 +1,41 @@
+- cards:
+  - color_type: card
+    entity: script.programma_1_term
+    icon: 'mdi:numeric-1'
+    name: MATTINA
+    state:
+      - color: 'rgb(66,134,255)'
+        value: 'off'
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.programma_1_term
+    type: 'custom:button-card'
+  - color_type: card
+    entity: script.programma_2_term
+    icon: 'mdi:numeric-2'
+    name: POM
+    state:
+      - color: 'rgb(255,128,1)'
+        value: 'off'
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.programma_2_term
+    type: 'custom:button-card'
+  - color_type: card
+    entity: script.programma_3_term
+    icon: 'mdi:numeric-3'
+    name: NOTTE
+    state:
+      - color: 'rgb(143,143,143)'
+        value: 'off'
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.programma_3_term
+    type: 'custom:button-card'
+  type: horizontal-stack
